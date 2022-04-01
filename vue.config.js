@@ -13,6 +13,11 @@ module.exports = {
     }
   },
 
+  publicPath: process.env.NODE_ENV === 'production'
+      ? '/sub-web/'
+      : '/sub-web/',
+
+
   chainWebpack: config => {
     // set svg-sprite-loader
     config.module
@@ -42,5 +47,8 @@ module.exports = {
       navigateFallback: '/',
       navigateFallbackBlacklist: [/\/api\//]
     }
-  }
+  },
+
+
+
 };
