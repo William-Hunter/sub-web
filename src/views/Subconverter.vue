@@ -210,7 +210,10 @@
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [
+                        {value: "http://127.0.0.1:/sub?"},
+                        {value: "http://101.35.218.66/subconverter/sub?"}
+                    ],
         remoteConfig: [
           {
             label: "universal",
