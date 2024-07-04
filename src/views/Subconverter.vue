@@ -211,10 +211,21 @@
           Surge2: "surge&ver=2",
         },
         backendOptions: [
-                        {value: "http://127.0.0.1:/sub?"},
-                        {value: "http://101.35.218.66/subconverter/sub?"}
+                        {value: "http://127.0.0.1:/sub?"}
+                        ,{value: "http://101.35.218.66/subconverter/sub?"}
+                        ,{value: "http://101.35.218.66/subconverter2/sub?"}
                     ],
         remoteConfig: [
+          {
+            label: "selfdefine",
+            options: [
+              {
+                label: "online-full",
+                value:
+                  "https://cdn.jsdelivr.net/gh/William-Hunter/ACL4SSR@master/Clash/config/ACL4SSR_Online_Full.ini"
+              }
+            ]
+          },
           {
             label: "universal",
             options: [
